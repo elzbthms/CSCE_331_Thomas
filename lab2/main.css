@@ -1,0 +1,109 @@
+
+/* .sidebar {
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    top: 19;
+    padding-top: 40px;
+  }
+  .sidebar div {
+    padding: 8px;
+    font-size: 18px;
+    display: block;
+  } */
+  /* .body-text {
+    
+  } */
+
+  section#main{
+    width: 500;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: inline;     
+  }
+  img {
+    max-width:250px;
+    height:auto
+  }
+
+  
+  /* Style the links inside the navigation bar */
+  /* landing page css*/
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #00000000;
+        color: rgb(0, 0, 0);
+    }
+
+.active {
+    color: blue; /* Sets the text color to blue */
+    text-decoration: none; /* Removes the underline */
+}
+
+/* Optional: Style the link when hovered over */
+.active:hover {
+    color: darkblue; /* Changes the text color to dark blue when hovered */
+}
+
+.qual_cont {
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+  
+.qual_cont > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.ser_label {
+    display: grid;
+    height: 40px;
+    align-content: center;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    padding: 10px;
+}
+.ser_label > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.ser_cont {
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+  
+.ser_cont > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
