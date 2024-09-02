@@ -1,130 +1,226 @@
+/* MISC. CSS */
+    section#main{
+        width: 500;
+        float: left;
+        margin: 0;
+        padding: 0;
+        display: inline;     
+    }
+    img {
+        max-width:250px;
+        height:auto
+    }
 
-  section#main{
-    width: 500;
-    float: left;
-    margin: 0;
-    padding: 0;
-    display: inline;     
-  }
-  img {
-    max-width:250px;
-    height:auto
-  }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    header {
+        text-align: center;
+        padding: 10px 0;
+    }
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-header {
-    text-align: center;
-    padding: 20px 0;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-}
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #000;
-}
-nav a.current {
-    color: darkblue;
-    font: bolder;
-}
-nav a.hover {
-    color: darkblue;
-    font: bolder;
-}
+    main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .headshot {
+        width: auto;
+        height: auto;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .about-me {
+        text-align: center;
+        max-width: 600px;
 
-main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-.headshot {
-    width: auto;
+    }
+
+    .main_page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+/* NAVIGATION BAR */
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #000;
+    }
+    nav a.current {
+        color: blue;
+        font: bolder;
+    }
+    nav a:hover {
+        color: gray;
+        font: bolder;
+    }
+
+
+/* PORTFOLIO TAB */
+.port_cont {
+    width: 100%;
     height: auto;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin-bottom: 20px;
-}
-.about-me {
     text-align: center;
-    max-width: 600px;
-
-}
-.toggle {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-  
-  /* Style the links inside the navigation bar */
-  /* landing page css*/
-
-.main_page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.qual_cont {
-    display: grid;
-    height: 400px;
-    align-content: center;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-    /* background-color: #2196F3; */
     padding: 10px;
+    margin: 25px;
+    /* border-collapse: collapse; */
 }
-  
-.qual_cont > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-.ser_label {
-    display: grid;
-    height: 40px;
-    align-content: center;
-    grid-template-columns: auto auto ;
-    gap: 10px;
-    padding: 10px;
-}
-.ser_label > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-.ser_cont {
-    display: grid;
-    height: 400px;
-    align-content: center;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-    padding: 10px;
-}
-  
-.ser_cont > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
+
+
+/* QUALIFICATIONS TAB */
+    .qual_cont {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        margin: 25px;
+        /* border-collapse: collapse; */
+    }
+
+    .qual_stmts{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .qual_stmts th, .qual_stmts td{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    .qual_stmts th {
+        width: 30%;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: top;
+    }
+    .qual_stmts td{
+        width: 70%;
+    }
+
+
+/* SERVICE TAB */
+    .ser_label {
+        display: grid;
+        height: 40px;
+        align-content: center;
+        grid-template-columns: auto auto ;
+        gap: 10px;
+        padding: 10px;
+    }
+    .ser_label > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    .ser_cont {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        margin: 25px;
+        /* border-collapse: collapse; */
+    }
+
+
+    /* Styling the area of the slides */
+    #slideshow {
+        overflow: hidden;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    /* Style each of the sides 
+      with a fixed width and height */
+    .slide {
+        float: left;
+        height: 200px;
+        width: 200px;
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper {
+    
+        /* Calculate the total width on the
+        basis of number of slides */
+        width: 800px;
+    
+        /* Specify the animation with the
+        duration and speed */
+        animation: slide 10s ease infinite;
+    }
+    
+    
+    /* Define the animation 
+      for the slideshow */
+    @keyframes slide {
+    
+        /* Calculate the margin-left for 
+        each of the slides */
+        20% {
+            margin-left: 0px;
+        }
+    
+        40% {
+            margin-left: calc(-200px * 1);
+        }
+    
+        60% {
+            margin-left: calc(-200px * 2);
+        }
+    
+        80% {
+            margin-left: calc(-200px * 3);
+        }
+    }
+    
+
+    /* CHATGPT PAGE */
+    .cgp_cont {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        margin: 25px;
+        /* border-collapse: collapse; */
+    }
+
+    .cgp_stmts{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .cgp_stmts th, .cgp_stmts td{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    .cgp_stmts th {
+        width: 30%;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: top;
+    }
+    .cgp_stmts td{
+        width: 70%;
+    }
